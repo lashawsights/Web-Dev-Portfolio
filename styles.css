@@ -1,0 +1,214 @@
+html {
+    background: url("apoca2.jpg") no-repeat left center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.body {
+    margin: 0;
+
+}
+.outter {
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position:bottom ; */
+}
+.main {
+
+    width: 95vw;
+    height: 70vw;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px 0 10px 135px;
+    box-sizing: border-box;
+
+}
+
+.main div {
+    /* height:fit-content; */
+    padding: 8px;
+    border: 1px solid #000000;
+
+}
+
+
+.header {
+    height: 627px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    border: 0.1rem solid rgb(187, 183, 183);
+    border-radius: 2%;
+    box-shadow: 8px 8px 5px rgb(17, 0, 0);
+    padding: 8px;
+    /* background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc); */
+    opacity: 88%;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #7c7979 40%, #343435 44%);
+}
+
+#mainframe {
+    background-color: rgb(0, 0, 0);
+}
+
+.connectors {
+    margin-top: 22px;
+    border: 1px solid rgb(3, 190, 87);
+    border-radius: 20%;
+    box-shadow: 8px 1px 5px rgb(17, 0, 0);
+    padding: 0;
+    background-color: #000000;
+    opacity: 90%;
+}
+
+.controls {
+    opacity: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-top: -5px;
+    border: 1px solid rgb(20, 19, 19);
+    border-radius: 20%;
+    box-shadow: 8px 8px 5px rgb(17, 0, 0);
+    padding: 15px 5px !important;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #2e2e2e 15%, #757474 74%);
+}
+
+
+.button1 {
+    box-shadow: 3px 4px 5px 2px #270909;
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color: #240806;
+    border-radius: 5px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #f7f2f2;
+}
+.button1:hover {
+    background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color: #f24437;
+}
+.button1:active {
+    position: relative;
+    top: 1px;
+}
+
+.skillsbox {
+    width: 50%;
+    margin-top: 110px;
+    margin-left: 82px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: black;
+    opacity: 80%;
+    color: white;
+    border: 1 solid;
+    border-radius: 20px;
+    text-align: center !important;
+}
+
+.slist {
+    display: inline-block;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.infoscreen {
+
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+
+.logo {
+    display: flex;
+    font-size: 10px;
+    width: 70%;
+    height: 8%;
+    margin-top: 8px;
+    margin-left: 50px;
+    margin-right: 70px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px !important;
+    border: 1px solid !important;
+    border-radius: 40px;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    opacity: 85%;
+}
+
+p {
+    border-right: solid 5px rgba(255, 255, 255, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 28px;
+    color: rgba(7, 160, 53, 0.7);
+}
+
+/* Animation */
+p {
+    animation: animated-text 4s linear 1s 1 normal both, animated-cursor 600ms linear infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 510px;
+    }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(7, 161, 28, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes spin3D {
+    from {
+        transform: rotateY(0deg)
+    }
+    to {
+        transform: rotateY(360deg)
+    }
+}
+.spinhov3D {
+    animation-name: spin3D;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+    animation-timing-function: ease-in-out;
+}
+
+
