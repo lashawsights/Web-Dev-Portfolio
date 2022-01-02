@@ -20,6 +20,24 @@ function newsletterEmail(){
     document.getElementById("infoscreen").innerText="Newsletter Email Activated"
 }
 
+function landingPage1(){
+    var url="https://lameadous-shaw.aweb.page/p/5153bbc2-5389-413a-8296-e643dec4ef78";
+    var change = document.getElementById("mainframe");
+    change.src=url;
+
+    // document.getElementById("infoscreen").style.textAlign="right";
+    document.getElementById("infoscreen").innerText="Landing Page 1"
+}
+
+function landingPage2(){
+    var url="https://lameadous-shaw.aweb.page/p/426192a2-edeb-40aa-9115-5d06011e8873";
+    var change = document.getElementById("mainframe");
+    change.src=url;
+
+    // document.getElementById("infoscreen").style.textAlign="right";
+    document.getElementById("infoscreen").innerText="Landing Page 2"
+}
+
 function contact(){
     var url="contact.html";
     var change = document.getElementById("mainframe");
